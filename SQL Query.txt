@@ -1,0 +1,29 @@
+CREATE DATABASE coffeeshop;
+
+
+
+CREATE TABLE orders(
+oid int AUTO_INCREMENT PRIMARY KEY,
+item varchar(255),
+quan int,
+address varchar(255)
+);
+
+
+INSERT INTO orders (oid,item,address,quan) VALUES(1,'coffee','Richmond Hill Galle',2);
+INSERT INTO orders (oid,item,address,quan) VALUES(2,'Tea','Rathgama Galle Road',4);
+INSERT INTO orders (oid,item,address,quan) VALUES(3,'black coffee','Dodanduwa colombo road galle',5);
+
+
+
+CREATE TABLE product(
+pid int AUTO_INCREMENT PRIMARY KEY,
+pname varchar(255),
+price float(15)
+);
+
+
+INSERT INTO product (pid,pname,price) VALUES(100,'coffee',100);
+INSERT INTO product (pid,pname,price) VALUES(200,'Tea',150);
+INSERT INTO product (pid,pname,price) VALUES(300,'black coffee',200);
+
